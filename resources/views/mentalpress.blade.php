@@ -131,7 +131,7 @@
                 <div class="jumbotron  jumbotron--with-captions">
                     <div class="carousel  slide  fade" id="headerCarousel" data-ride="carousel" data-interval="5000">
                         <div class="carousel-inner">
-                            <div class="item"> <img src="{{asset('assets/images/image-24-425x200.jpg') }}" srcset="{{asset('assets/images/image-24-425x200.jpg 425w') }}, {{asset('assets/images/image-24-850x400.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Be smart, help yourself now.&quot;">
+                            <div class="item"> <img src="{{asset('assets/images/21477.jpg') }}" srcset="{{asset('assets/images/21477.jpg 425w') }}, {{asset('assets/images/21477.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Be smart, help yourself now.&quot;">
                                 <div class="jumbotron-content">
                                     <h1 class="jumbotron-content__title">"Be smart, help yourself now."</h1>
                                     <div class="jumbotron-content__description">
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item active"> <img src="{{asset('assets/images/image-6-425x200.jpg') }}" srcset="{{asset('assets/images/image-6-425x200.jpg 425w') }}, {{asset('assets/images/image-6-850x400.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Mental illness is no myth.&quot;">
+                            <div class="item active"> <img src="{{asset('assets/images/image-6-425x200.jpg') }}" srcset="{{asset('assets/images/21477.jpg 425w') }}, {{asset('assets/images/21477.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Mental illness is no myth.&quot;">
                                 <div class="jumbotron-content">
                                     <h1 class="jumbotron-content__title">"Mental illness is no myth."</h1>
                                     <div class="jumbotron-content__description">
@@ -147,14 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item"> <img src="{{asset('assets/images/image-8-425x200.jpg') }}" srcset="{{asset('assets/images/image-8-425x200.jpg 425w') }}, {{asset('assets/images/image-8-850x400.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Life is too short to wait&quot;">
-                                <div class="jumbotron-content">
-                                    <h1 class="jumbotron-content__title">"Life is too short to wait"</h1>
-                                    <div class="jumbotron-content__description">
-                                        <p><i>–</i>&nbsp;Unknown Girl</p>
-                                    </div>
-                                </div>
-                            </div>
+                        
                         </div>
                         <a class="left  jumbotron__control" href="#headerCarousel" role="button" data-slide="prev"> <i class="fa  fa-chevron-left"></i> </a>
                         <a class="right  jumbotron__control" href="#headerCarousel" role="button" data-slide="next"> <i class="fa  fa-chevron-right"></i> </a>

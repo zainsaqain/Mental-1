@@ -487,20 +487,7 @@
                         </div>
                     </div>
                    
-                    <div class="widget  widget_text">
-                        <h4 class="sidebar__headings">Forms</h4>
-                        <div class="textwidget">Before our first session, kindly take some time to print &amp; fill out relevant forms as well as you can.
-                            <br>
-                            <br><a class="btn  btn-default  fullwidth" href="{{asset('assets/images/brochure.pdf') }}" target="_self"><i class="fa fa-file-pdf-o"></i> Financial Agreement</a><a class="btn  btn-default  fullwidth" href="{{asset('assets/images/brochure.pdf') }}" target="_self"><i class="fa fa-file-word-o"></i> Release of Information</a></div>
-                    </div>
-                    <div class="widget  widget_text">
-                        <h4 class="sidebar__headings">Verifications</h4>
-                        <div class="textwidget">
-                            <a href="#"><img src="{{asset('assets/images/verification_01.png') }}" class="logo-alternative" alt="Verification"></a>
-                            <a href="#"><img src="{{asset('assets/images/verification_02.png') }}" class="logo-alternative" alt="Verification"></a>
-                            <a href="#"><img src="{{asset('assets/images/verification_03.png') }}" class="logo-alternative" alt="Verification"></a>
-                        </div>
-                    </div>
+                  
                 </div>
 
                 <!-- ========  // END SIDEBAR ======== -->

@@ -59,7 +59,7 @@
                             <span class="arrow" style="float: right;">&#x25BC;</span> <!-- Arrow icon at the end -->
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="email-inbox.html">Create Services</a></li>
+                            <li><a href="{{('')}}">Create Services</a></li>
                             <li><a href="email-read.html">Show Services</a></li>
                         </ul>
                     </li>

@@ -1,308 +1,176 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Now</title>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ asset('vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>Login</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
-@import url("{{asset('assets/img/bg/login-bg.jpg')}}");
-
-        *, *::before, *::after {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Quicksand", sans-serif;
         }
 
         body {
+            background-color: #ffffff;
+            font-family: 'Karla', sans-serif;
+            height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+        }
+
+        .container {
             width: 100%;
-            background: black;
-            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        /* Snow */
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        main {
-            display: grid;
-            grid-template-columns: 45% 55%;
-            place-items: center;
-            background: #f6f6f6;
-            width: min(700px, 95%);
-            border-radius: 20px;
-        }
-
-        /* Left Side */
-        .left-side {
-            height: 100%;
-            width: 100%;
-            background-image: url({{ asset('assets/img/bg/login-bg.jpg') }});
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            pointer-events: none;
-            border-radius: 20px 0 0 20px;
-        }
-
-        /* Right Side - Centering Content */
-        .right-side {
-            padding: 60px;
+        .login-section {
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            height: 100%;
+            padding: 2rem;
+        }
+
+        .form-title {
             text-align: center;
+            font-size: 3rem;
+            font-family: "Caveat", cursive;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
         }
 
-        /* Form Container Centering */
-        form {
-            width: 100%;
-            max-width: 300px;
+        .form-group {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            margin-bottom: 1rem;
         }
 
-        /* Logo Container */
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            padding-top: 3rem;
-            padding-bottom: 2rem;
+        .form-label {
+            font-size: 1.125rem;
         }
 
-        /* Logo Image */
-        .logo {
+        .form-input {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #cbd5e0;
+            border-radius: 0.375rem;
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            color: #4a5568;
+            margin-top: 0.25rem;
+            outline: none;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        .form-input:focus {
+            box-shadow: 0 0 10px rgba(180, 142, 64, 0.5);
+        }
+
+        .submit-button {
+            background-color: #000000;
             color: #ffffff;
             font-weight: bold;
-            font-size: 1.25rem;
-            padding: 1rem;
-            text-decoration: none;
-        }
-        
-        .logo img {
-            width: 8rem; /* Adjust as needed for responsiveness */
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Button Group */
-        .btn-group {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 5px;
-            margin-bottom: 32px;
-        }
-
-        .btn-group .btn {
-            display: flex;
-            align-items: center;
-            column-gap: 4px;
-            width: max-content;
-            font-size: 0.8rem;
-            font-weight: 500;
-            padding: 8px 6px;
-            border: 2px solid #6b7280;
-            border-radius: 5px;
-            background-color: #f6f6f6;
-            transform: scale(1);
+            font-size: 1.125rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease-in-out;
             cursor: pointer;
-            transition: transform 0.1s ease, background-color 0.5s, color 0.5s;
+            border: none;
+            border-radius: 5px;
         }
 
-        .btn-group .btn:focus {
-            transform: scale(0.97);
+        .submit-button:hover {
+            background-color: #B48E40;
         }
 
-        .btn-group .btn:hover {
-            background-color: #000;
-            color: #eee;
-        }
-
-        .btn img {
-            width: 16px;
-            height: 16px;
-        }
-
-        /* OR */
-        .or {
-            position: relative;
+        .login-link-container {
             text-align: center;
-            margin-bottom: 24px;
-            font-size: 1rem;
+            padding-top: 2rem;
+        }
+
+        .login-link {
+            text-decoration: underline;
             font-weight: 600;
-        }
-
-        .or::before, .or::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            width: 40%;
-            height: 1px;
-            background: #000;
-        }
-
-        .or::before {
-            left: 0;
-        }
-
-        .or::after {
-            right: 0;
-        }
-
-        /* Inputs and Labels */
-        input {
-            width: 100%;
-            padding: 12px 20px;
-            border: 2px solid #ccc;
-            outline: 0;
-            border-radius: 5px;
-            background-color: transparent;
-            margin: 4px 0 18px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: all 0.5s;
-        }
-
-        input:focus {
-            border: 2px solid #000;
-        }
-
-        input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: #000;
-            transition: background-color 5000s ease-in-out 0s;
-        }
-
-        label {
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        /* Login Button */
-        .login-btn {
-            width: 100%;
-            font-size: 0.9rem;
-            font-weight: 600;
-            padding: 8px 24px;
-            margin: 12px 0 24px;
-            border: 2px solid #6b7280;
-            border-radius: 5px;
-            background-color: #f6f6f6;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
-
-        .login-btn:hover {
-            background-color: #000;
-            color: #eee;
-        }
-
-        /* Links */
-        .links {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        a {
-            color: #000;
-            font-size: 0.88rem;
-            font-weight: 600;
-            letter-spacing: -1px;
-            transition: all 0.4s ease;
-            text-decoration: none;
-        }
-
-        a:hover {
             color: #B48E40;
         }
 
+        .text-danger {
+            color: red;
+            padding: 5px;
+        }
+
+        .image-section {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .background-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
         @media (max-width: 768px) {
-            main {
-                grid-template-columns: 100%;
-            }
-
-            .left-side {
-                display: none;
-            }
-
-            .right-side {
-                padding: 40px 20px;
+            .login-section, .image-section {
+                width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
-<div id="particles-js" class="snow"></div>
-
-<main>
-    <div class="left-side"></div>
-    <div class="right-side">
-        <form method="post" action="{{ route('login') }}">
-            @csrf
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-section">
+            <p class="form-title">Login</p>
+            <form action="{{ route('login') }}" method="post">
+                @csrf
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" class="form-input" required />
+                    @if ($errors->has('email'))
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
                 </div>
-            @endif
-            <div class="logo-container">
-                <a href="/" class="logo">
-                    <img src="{{ asset('assets/images/21477.jpg') }}" alt="Logo">
-                </a>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" class="form-input" required />
+                    @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
+                </div>
+
+                <input type="submit" value="Login" class="submit-button" />
+            </form>
+
+            <div class="login-link-container">
+                <p>Don't have an account? <a href="/register" class="login-link">Register here.</a></p>
             </div>
+        </div>
 
-            <label for="email">Email</label>
-            <input type="text" placeholder="Enter Email" name="email" required />
-
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter Password" name="password" required />
-
-            <button type="submit" class="login-btn">Sign in</button>
-            <div class="links">
-                <a href="#">Forgot password?</a>
-                <a href="/register">Do not have an account?</a>
-            </div>
-        </form>
+        <!-- Image Section -->
+        <div class="image-section">
+            <img class="background-image" src="{{ asset('assets/images/image-45.jpg') }}" alt="Background" />
+        </div>
     </div>
-</main>
 
-<script>
-    particlesJS("particles-js", {
-        particles: {
-            number: {
-                value: 310,
-                density: { enable: true, value_area: 800 },
-            },
-            color: { value: "#fff" },
-            shape: { type: "circle", polygon: { nb_sides: 5 } },
-            opacity: { value: 1 },
-            size: { value: 3, random: true },
-            line_linked: { enable: false },
-            move: { enable: true, speed: 2, direction: "bottom", out_mode: "out" },
-        },
-        retina_detect: true,
-    });
-</script>
+    <!-- Load jQuery and Bootstrap in correct order to avoid issues -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

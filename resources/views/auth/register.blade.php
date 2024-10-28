@@ -215,7 +215,6 @@
         <div class="register-section">
 
             <div class="logo-container">
-                <a href="/" class="logo"><img src="{{ asset('assets/images/21477.jpg') }}"></a>
             </div>
 
             <div class="form-container">
@@ -268,7 +267,7 @@
 
         <!-- Image Section -->
         <div class="image-section">
-            <img class="background-image" src="{{ asset('assets/images/mental.jpg') }}" alt="Background" />
+            <img class="background-image" src="{{ asset('assets/images/family.jpg') }}" alt="Background" />
         </div>
     </div>
 

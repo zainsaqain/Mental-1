@@ -99,10 +99,31 @@
                     </div>
                 </div>
 
-                <div class="widget  header-widgets__widget  widget-social-icons">
-                    <a class="social-icons__link" href="https://www.facebook.com/web3canvas" target="_blank"><i class="fa  fa-facebook"></i></a>
-                    <a class="social-icons__link" href="https://twitter.com/web3canvas" target="_blank"><i class="fa  fa-twitter"></i></a>
-                    <a class="social-icons__link" href="https://www.youtube.com/user/surjithctly" target="_blank"><i class="fa  fa-youtube"></i></a>
+                <div class="widget header-widgets__widget widget-social-icons">
+                    <!-- Social Media Icons -->
+                 
+                    <a class="social-icons__link" href="https://www.youtube.com/user/surjithctly" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                
+                    <!-- Authenticated User Links -->
+                    @guest
+                        <!-- Show Login and Register Icons if user is not authenticated -->
+                        <a class="social-icons__link" href="{{ route('login') }}">
+                            <i class="fa fa-sign-in"></i>
+                        </a>
+                        <a class="social-icons__link" href="{{ route('register') }}">
+                            <i class="fa fa-user-plus"></i>
+                        </a>
+                    @else
+                        <!-- Show Logout Icon if user is authenticated -->
+                        <form method="POST" action="{{ route('logout') }}" style="display: inline;">
+                            @csrf
+                            <button type="submit" class="social-icons__link" style="background: none; border: none; cursor: pointer;">
+                                <i class="fa fa-sign-out"></i>
+                            </button>
+                        </form>
+                    @endguest
                 </div>
 
                 <div class="widget  header-widgets__widget  widget_text">

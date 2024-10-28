@@ -14,6 +14,8 @@
     <link href="{{ asset('auth/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('auth/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('auth/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+
 </head>
 
 <body>
@@ -78,7 +80,7 @@
     <!-- Add your JS files here -->
     <script src="{{ asset('auth/assets/libs/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('auth/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="auth/assets/js/app.js"></script>
+    <script src="auth/assets/js/app.js'"></script>
 
     
 </body>

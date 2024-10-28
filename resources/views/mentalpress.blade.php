@@ -476,7 +476,6 @@
                                 </ul>
                             </li>
                             <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-                        </ul> <a class="btn  btn-primary  btn-featured-page" target="_self" href="appointment.html"> Make an Appointment </a>
                     </nav>
                     <div class="widget  widget-about-us">
                         <div id="carousel-people-pw_about_us-2" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -487,11 +486,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="widget  widget-skype">
-                        <a class="skype-button" href="skype:echo123"> <i class="fa  fa-skype"></i>
-                            <p class="skype-button__title">Skype Call</p>
-                        </a>
-                    </div>
+                   
                     <div class="widget  widget_text">
                         <h4 class="sidebar__headings">Forms</h4>
                         <div class="textwidget">Before our first session, kindly take some time to print &amp; fill out relevant forms as well as you can.

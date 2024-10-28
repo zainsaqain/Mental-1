@@ -41,12 +41,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*/ Firefox /*/
+        /* Fix scrollbar color for visibility */
         scrollbar-width: thin;
         scrollbar-color: black #f0f0f0;
     }
 
-    /*/ Webkit Browsers /*/
+    /* Webkit Browsers */
     .register-section::-webkit-scrollbar {
         width: 12px;
         height: 12px;
@@ -61,7 +61,6 @@
         background: #f0f0f0;
         border-radius: 10px;
     }
-
 
     .logo-container {
         display: flex;
@@ -124,11 +123,14 @@
         padding: 0.5rem 0.75rem;
         color: #4a5568;
         margin-top: 0.25rem;
+        /* Fix focus outline */
+        outline: none;
         transition: box-shadow 0.2s ease-in-out;
     }
 
     .form-input:focus {
         outline: none;
+        /* Adjust focus box-shadow for better visibility */
         box-shadow: 0 0 10px rgba(180, 142, 64, 0.5);
     }
 
@@ -143,7 +145,7 @@
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        /*font-family: "Caveat", cursive;*/
+        /* Remove font family override to keep consistency */
     }
 
     .submit-button:hover {
@@ -189,7 +191,6 @@
 
         .logo-container {
             justify-content: flex-start;
-            /*padding-top: 3rem;*/
             padding-left: 3rem;
             margin-bottom: -3rem;
 
@@ -238,8 +239,6 @@
                         @endif
                     </div>
 
-                  
-
                     <div class="form-group">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" id="password" name="password" placeholder="Password"
@@ -276,9 +275,8 @@
 </body>
 
 </html>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Load jQuery and Bootstrap in correct order to avoid issues -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>

@@ -44,45 +44,23 @@
             @yield('content')
         </div>
     </div>
-    <!-- Sidebar Toggle Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sidebar = document.querySelector('.vertical-menu');
-            const subMenuLinks = document.querySelectorAll('.has-arrow');
+    <!-- JAVASCRIPT -->
+    <script src="{{asset('auth/assets/libs/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('auth/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('auth/assets/libs/metismenu/metisMenu.min.js')}}"></script>
+    <script src="{{asset('auth/assets/libs/simplebar/simplebar.min.js')}}"></script>
+    <script src="{{asset('auth/assets/libs/node-waves/waves.min.js')}}"></script>
 
-            // Toggle submenus on click
-            subMenuLinks.forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const subMenu = link.nextElementSibling;
-                    
-                    // Close all other submenus
-                    document.querySelectorAll('.sub-menu').forEach(menu => {
-                        if (menu !== subMenu) menu.classList.remove('show');
-                    });
+    <!-- Ion Range Slider-->
+    <script src="{{asset('auth/assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js')}}"></script>
 
-                    // Toggle the clicked submenu
-                    subMenu.classList.toggle('show');
-                });
-            });
+    <!-- init js -->
+    <script src="{{asset('auth/assets/js/pages/product-filter-range.init.js')}}"></script>
 
-            // Close submenus on outside click
-            document.addEventListener('click', function (event) {
-                const isClickInside = sidebar.contains(event.target);
-                if (!isClickInside) {
-                    document.querySelectorAll('.sub-menu.show').forEach(menu => {
-                        menu.classList.remove('show');
-                    });
-                }
-            });
-        });
-    </script>
-    <!-- Add your JS files here -->
-    <script src="{{ asset('auth/assets/libs/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('auth/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('auth/assets/js/app.js') }}"></script>
+    <script src="{{asset('auth/assets/js/app.js')}}"></script>
 
-    
 </body>
 
+<!-- Mirrored from themesdesign.in/morvin/layouts/ecommerce-products.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2024 14:34:25 GMT -->
 </html>
+

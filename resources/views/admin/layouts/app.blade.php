@@ -80,7 +80,7 @@
     <!-- Add your JS files here -->
     <script src="{{ asset('auth/assets/libs/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('auth/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="auth/assets/js/app.js'"></script>
+    <script src="{{ asset('auth/assets/js/app.js') }}"></script>
 
     
 </body>

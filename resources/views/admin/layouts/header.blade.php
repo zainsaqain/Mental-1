@@ -63,9 +63,10 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
                     <!-- item-->
-                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle-outline font-size-16 align-middle me-1"></i> Profile</a>
+                    <a class="dropdown-item" href="{{route('profiles.index')}}"><i class="mdi mdi-account-circle-outline font-size-16 align-middle me-1"></i> Profile</a>
                   
                 <!-- Check if user is not authenticated (Guest) -->
+                
 @guest
 <div class="dropdown-divider"></div>
 <a class="dropdown-item" href="{{ route('login') }}">

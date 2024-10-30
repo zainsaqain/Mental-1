@@ -99,31 +99,10 @@
                     </div>
                 </div>
 
-                <div class="widget header-widgets__widget widget-social-icons">
-                    <!-- Social Media Icons -->
-                 
-                    <a class="social-icons__link" href="https://www.youtube.com/user/surjithctly" target="_blank">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                
-                    <!-- Authenticated User Links -->
-                    @guest
-                        <!-- Show Login and Register Icons if user is not authenticated -->
-                        <a class="social-icons__link" href="{{ route('login') }}">
-                            <i class="fa fa-sign-in"></i>
-                        </a>
-                        <a class="social-icons__link" href="{{ route('register') }}">
-                            <i class="fa fa-user-plus"></i>
-                        </a>
-                    @else
-                        <!-- Show Logout Icon if user is authenticated -->
-                        <form method="POST" action="{{ route('logout') }}" style="display: inline;">
-                            @csrf
-                            <button type="submit" class="social-icons__link" style="background: none; border: none; cursor: pointer;">
-                                <i class="fa fa-sign-out"></i>
-                            </button>
-                        </form>
-                    @endguest
+                <div class="widget  header-widgets__widget  widget-social-icons">
+                    <a class="social-icons__link" href="https://www.facebook.com/web3canvas" target="_blank"><i class="fa  fa-facebook"></i></a>
+                    <a class="social-icons__link" href="https://twitter.com/web3canvas" target="_blank"><i class="fa  fa-twitter"></i></a>
+                    <a class="social-icons__link" href="https://www.youtube.com/user/surjithctly" target="_blank"><i class="fa  fa-youtube"></i></a>
                 </div>
 
                 <div class="widget  header-widgets__widget  widget_text">
@@ -149,177 +128,175 @@
                       SLIDER
                      ============================ -->
 
-                <div class="jumbotron  jumbotron--with-captions">
-                    <div class="carousel  slide  fade" id="headerCarousel" data-ride="carousel" data-interval="5000">
-                        <div class="carousel-inner">
-                            <div class="item"> <img src="{{asset('assets/images/21477.jpg') }}" srcset="{{asset('assets/images/21477.jpg 425w') }}, {{asset('assets/images/21477.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Be smart, help yourself now.&quot;">
-                                <div class="jumbotron-content">
-                                    <h1 class="jumbotron-content__title">"Be smart, help yourself now."</h1>
-                                    <div class="jumbotron-content__description">
-                                        <p><i>–</i>&nbsp;Mahatma Gandhi</p>
-                                    </div>
-                                </div>
+        <div class="jumbotron  jumbotron--with-captions">
+            <div class="carousel  slide  fade" id="headerCarousel" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="item"> <img src="{{asset('assets/images/21477.jpg') }}" srcset="{{asset('assets/images/21477.jpg 425w') }}, {{asset('assets/images/21477.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Be smart, help yourself now.&quot;">
+                        <div class="jumbotron-content">
+                            <h1 class="jumbotron-content__title">"Be smart, help yourself now."</h1>
+                            <div class="jumbotron-content__description">
+                                <p><i>–</i>&nbsp;Mahatma Gandhi</p>
                             </div>
-                            <div class="item active"> <img src="{{asset('assets/images/image-6-425x200.jpg') }}" srcset="{{asset('assets/images/21477.jpg 425w') }}, {{asset('assets/images/21477.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Mental illness is no myth.&quot;">
-                                <div class="jumbotron-content">
-                                    <h1 class="jumbotron-content__title">"Mental illness is no myth."</h1>
-                                    <div class="jumbotron-content__description">
-                                        <p><i>–</i>&nbsp;Nelson Mandela</p>
-                                    </div>
-                                </div>
-                            </div>
-                        
                         </div>
-                        <a class="left  jumbotron__control" href="#headerCarousel" role="button" data-slide="prev"> <i class="fa  fa-chevron-left"></i> </a>
-                        <a class="right  jumbotron__control" href="#headerCarousel" role="button" data-slide="next"> <i class="fa  fa-chevron-right"></i> </a>
+                    </div>
+                    <div class="item active"> <img src="{{asset('assets/images/image-6-425x200.jpg') }}" srcset="{{asset('assets/images/21477.jpg 425w') }}, {{asset('assets/images/21477.jpg 850w') }}" sizes="(min-width: 768px) 720px, (min-width: 992px) 700px, (min-width: 1200px) 850px, calc(100vw-20px)" alt="&quot;Mental illness is no myth.&quot;">
+                        <div class="jumbotron-content">
+                            <h1 class="jumbotron-content__title">"Mental illness is no myth."</h1>
+                            <div class="jumbotron-content__description">
+                                <p><i>–</i>&nbsp;Nelson Mandela</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <a class="left  jumbotron__control" href="#headerCarousel" role="button" data-slide="prev"> <i class="fa  fa-chevron-left"></i> </a>
+                <a class="right  jumbotron__control" href="#headerCarousel" role="button" data-slide="next"> <i class="fa  fa-chevron-right"></i> </a>
+            </div>
+        </div>
+
+        <!-- ========  // SLIDER ======== -->
+
+        <!-- ============================
+            CONTENT
+            ============================ -->
+
+        <div class="content-container">
+
+            <article>
+                <div class="panel-grid row">
+                    <div class="col-md-6 panel-grid-cell">
+                        <div class="so-panel panel-first-child panel-last-child">
+                            <h3 class="widget-title">Welcome to my Practice</h3>
+                            <div class="textwidget">
+                                <p>As a psychologist and a cognitive behavioral therapist I have worked with hundreds of patients and understand the intricacies of various psychological issues that people face.</p>
+                                <p>My work revolves around being friendly, disciplined and organized yet flexible. I approach my patients and help them resolve their emotional issues of the past and the present, to open the door to a brighter and confident future.</p>
+                                <p><a class="read-more" href="about.html">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="so-panel panel-first-child widget_featured_page">
+                            <div class="page-box  page-box--inline">
+                                <a class="page-box__picture" href="depression-treatment.html"><img width="100" height="70" src="{{asset('assets/images/image-16-100x70.jpg') }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Depression Treatment"></a>
+                                <div class="page-box__content">
+                                    <h5 class="page-box__title  text-uppercase"><a href="depression-treatment.html">Depression Treatment</a></h5>
+                                    <p>Depression is a mental illness, which one should not confuse …</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="so-panel widget_featured_page">
+                            <div class="page-box  page-box--inline">
+                                <a class="page-box__picture" href="services/individual-treatment/index.html"><img width="100" height="70" src="{{asset('assets/images/image-27-100x70.jpg')  }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Individual Treatment"></a>
+                                <div class="page-box__content">
+                                    <h5 class="page-box__title  text-uppercase"><a href="services/individual-treatment/index.html">Individual Treatment</a></h5>
+                                    <p>Individual treatment is often termed as psychotherapy, and is …</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="so-panel panel-last-child widget_featured_page">
+                            <div class="page-box  page-box--inline">
+                                <a class="page-box__picture" href="anxiety-treatment.html"><img width="100" height="70" src="{{asset('assets/images/image-1-100x70.jpg') }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Anxiety Treatment"></a>
+                                <div class="page-box__content">
+                                    <h5 class="page-box__title  text-uppercase"><a href="anxiety-treatment.html">Anxiety Treatment</a></h5>
+                                    <p>Whether it is social phobia, specific phobia, post traumatic …</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- ========  // SLIDER ======== -->
+                <!-- ============================
+                    HIGHLIGHT LINK
+                    ============================ -->
+
+                <div class="panel-grid row m-b-lg">
+                    <div class="col-md-6">
+                        <div class="so-panel widget widget_pw_banner widget-banner panel-first-child panel-last-child" id="panel-6-1-0-0">
+                            <a class="banner" href="http://frequently-asked-questions/" target="_self">
+                                <div class="banner__title"> Privacy Policy</div>
+                                <div class="banner__content"> Between Doctors and Patients</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="so-panel widget widget_pw_banner widget-banner panel-first-child panel-last-child" id="panel-6-1-1-0">
+                            <a class="banner" href="http://shop/" target="_self">
+                                <div class="banner__title"> Book Recommendations</div>
+                                <div class="banner__content"> Couple of Books We Recommend You</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========  // END HIGHLIGHT LINK ======== -->
 
                 <!-- ============================
-                  CONTENT
-                 ============================ -->
+                        SERVICES OVERVIEW
+                        ============================ -->
 
-                <div class="content-container">
-
-                    <article>
-                        <div class="panel-grid row">
-                            <div class="col-md-6 panel-grid-cell">
-                                <div class="so-panel panel-first-child panel-last-child">
-                                    <h3 class="widget-title">Welcome to my Practice</h3>
-                                    <div class="textwidget">
-                                        <p>As a psychologist and a cognitive behavioral therapist I have worked with hundreds of patients and understand the intricacies of various psychological issues that people face.</p>
-                                        <p>My work revolves around being friendly, disciplined and organized yet flexible. I approach my patients and help them resolve their emotional issues of the past and the present, to open the door to a brighter and confident future.</p>
-                                        <p><a class="read-more" href="about.html">Read more</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="so-panel panel-first-child widget_featured_page">
-                                    <div class="page-box  page-box--inline">
-                                        <a class="page-box__picture" href="depression-treatment.html"><img width="100" height="70" src="{{asset('assets/images/image-16-100x70.jpg') }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Depression Treatment"></a>
-                                        <div class="page-box__content">
-                                            <h5 class="page-box__title  text-uppercase"><a href="depression-treatment.html">Depression Treatment</a></h5>
-                                            <p>Depression is a mental illness, which one should not confuse …</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="so-panel widget_featured_page">
-                                    <div class="page-box  page-box--inline">
-                                        <a class="page-box__picture" href="services/individual-treatment/index.html"><img width="100" height="70" src="{{asset('assets/images/image-27-100x70.jpg')  }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Individual Treatment"></a>
-                                        <div class="page-box__content">
-                                            <h5 class="page-box__title  text-uppercase"><a href="services/individual-treatment/index.html">Individual Treatment</a></h5>
-                                            <p>Individual treatment is often termed as psychotherapy, and is …</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="so-panel panel-last-child widget_featured_page">
-                                    <div class="page-box  page-box--inline">
-                                        <a class="page-box__picture" href="anxiety-treatment.html"><img width="100" height="70" src="{{asset('assets/images/image-1-100x70.jpg') }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Anxiety Treatment"></a>
-                                        <div class="page-box__content">
-                                            <h5 class="page-box__title  text-uppercase"><a href="anxiety-treatment.html">Anxiety Treatment</a></h5>
-                                            <p>Whether it is social phobia, specific phobia, post traumatic …</p>
-                                        </div>
-                                    </div>
+                <div class="panel-grid row">
+                    <div class="col-md-4">
+                        <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child" id="panel-6-2-0-0">
+                            <div class="page-box  page-box--block">
+                                <a class="page-box__picture" href="couples-therapy.html"><img width="360" height="240" src="{{asset('assets/images/image-21-360x240.jpg') }}" class="attachment-page-box size-page-box wp-post-image" alt="Couples Therapy"></a>
+                                <div class="page-box__content">
+                                    <h5 class="page-box__title  text-uppercase"><a href="couples-therapy.html">Couples Therapy</a></h5>
+                                    <p>A relationship goes through numerous phases during its life cycle, and it is obvious for it to have a few rough patches. However, the strength of a relationship is reflected in how the couples deal with those ...</p>
+                                    <p>
+                                        <a href="couples-therapy.html" class="read-more  read-more--page-box">Read more</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ============================
-                          HIGHLIGHT LINK
-                         ============================ -->
-
-                        <div class="panel-grid row m-b-lg">
-                            <div class="col-md-6">
-                                <div class="so-panel widget widget_pw_banner widget-banner panel-first-child panel-last-child" id="panel-6-1-0-0">
-                                    <a class="banner" href="http://frequently-asked-questions/" target="_self">
-                                        <div class="banner__title"> Privacy Policy</div>
-                                        <div class="banner__content"> Between Doctors and Patients</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="so-panel widget widget_pw_banner widget-banner panel-first-child panel-last-child" id="panel-6-1-1-0">
-                                    <a class="banner" href="http://shop/" target="_self">
-                                        <div class="banner__title"> Book Recommendations</div>
-                                        <div class="banner__content"> Couple of Books We Recommend You</div>
-                                    </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child" id="panel-6-2-1-0">
+                            <div class="page-box  page-box--block">
+                                <a class="page-box__picture" href="post-divorce-recovery.html"><img width="360" height="240" src="{{asset('assets/images/image-35-360x240.jpg') }}" class="attachment-page-box size-page-box wp-post-image" alt="Post-divorce Recovery"></a>
+                                <div class="page-box__content">
+                                    <h5 class="page-box__title  text-uppercase"><a href="post-divorce-recovery.html">Post-divorce Recovery</a></h5>
+                                    <p>Our systematic approach towards couple therapy is defined on the lines of enhancing the communication between the partners, and establishing short term and long term goals, where both the partners would be...</p>
+                                    <p><a href="post-divorce-recovery.html" class="read-more  read-more--page-box">Read more</a></p>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ========  // END HIGHLIGHT LINK ======== -->
-
-                        <!-- ============================
-                              SERVICES OVERVIEW
-                             ============================ -->
-
-                        <div class="panel-grid row">
-                            <div class="col-md-4">
-                                <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child" id="panel-6-2-0-0">
-                                    <div class="page-box  page-box--block">
-                                        <a class="page-box__picture" href="couples-therapy.html"><img width="360" height="240" src="{{asset('assets/images/image-21-360x240.jpg') }}" class="attachment-page-box size-page-box wp-post-image" alt="Couples Therapy"></a>
-                                        <div class="page-box__content">
-                                            <h5 class="page-box__title  text-uppercase"><a href="couples-therapy.html">Couples Therapy</a></h5>
-                                            <p>A relationship goes through numerous phases during its life cycle, and it is obvious for it to have a few rough patches. However, the strength of a relationship is reflected in how the couples deal with those ...</p>
-                                            <p>
-                                                <a href="couples-therapy.html" class="read-more  read-more--page-box">Read more</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child" id="panel-6-2-1-0">
-                                    <div class="page-box  page-box--block">
-                                        <a class="page-box__picture" href="post-divorce-recovery.html"><img width="360" height="240" src="{{asset('assets/images/image-35-360x240.jpg') }}" class="attachment-page-box size-page-box wp-post-image" alt="Post-divorce Recovery"></a>
-                                        <div class="page-box__content">
-                                            <h5 class="page-box__title  text-uppercase"><a href="post-divorce-recovery.html">Post-divorce Recovery</a></h5>
-                                            <p>Our systematic approach towards couple therapy is defined on the lines of enhancing the communication between the partners, and establishing short term and long term goals, where both the partners would be...</p>
-                                            <p><a href="post-divorce-recovery.html" class="read-more  read-more--page-box">Read more</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child" id="panel-6-2-2-0">
-                                    <div class="page-box  page-box--block">
-                                        <a class="page-box__picture" href="children-therapy.html"><img width="360" height="240" src="{{asset('assets/images/image-54-360x240.jpg') }}" class="attachment-page-box size-page-box wp-post-image" alt="Therapy for Children"></a>
-                                        <div class="page-box__content">
-                                            <h5 class="page-box__title  text-uppercase"><a href="children-therapy.html">Therapy for Children</a></h5>
-                                            <p>There are many emotional issues that find a corner in our heart, and refuse to die down. With time, these issues can transform into a sort of emotional tumor that impacts negatively on our daily life, such as lack of...</p>
-                                            <p><a href="children-therapy.html" class="read-more  read-more--page-box">Read more</a></p>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child" id="panel-6-2-2-0">
+                            <div class="page-box  page-box--block">
+                                <a class="page-box__picture" href="children-therapy.html"><img width="360" height="240" src="{{asset('assets/images/image-54-360x240.jpg') }}" class="attachment-page-box size-page-box wp-post-image" alt="Therapy for Children"></a>
+                                <div class="page-box__content">
+                                    <h5 class="page-box__title  text-uppercase"><a href="children-therapy.html">Therapy for Children</a></h5>
+                                    <p>There are many emotional issues that find a corner in our heart, and refuse to die down. With time, these issues can transform into a sort of emotional tumor that impacts negatively on our daily life, such as lack of...</p>
+                                    <p><a href="children-therapy.html" class="read-more  read-more--page-box">Read more</a></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- ========  // END SERVICES OVERVIEW ======== -->
+                <!-- ========  // END SERVICES OVERVIEW ======== -->
 
-                        <!-- ============================
-                              TESTIMONIALs
-                             ============================ -->
+                <!-- ============================
+                        TESTIMONIALs
+                        ============================ -->
 
-                        <div class="panel-grid row m-b-lg">
-                            <div class="panel-row-style">
-                                <div class="col-md-12">
-                                    <div class="so-panel widget widget-testimonials panel-first-child panel-last-child">
-                                        <div class="testimonial grey-wrap">
-                                            <h2 class="widget-title">Testimonials</h2>
-                                            <div class="carousel slide" data-ride="carousel" data-interval="false">
-                                                <div class="carousel-inner" role="listbox">
-                                                    <div class="item active">
-                                                        <div class="row">
-                                                            <div class="col-xs-12  col-sm-12">
-                                                                <blockquote>
-                                                                    <p class="testimonial__quote"> We've had a lot of financial troubles over the years; loss of physical health, job and bankruptcy. Laura's coaching gave us hope and a new sense of vision so we can create our lives together.</p>
-                                                                    <cite class="testimonial__author"> Anastacia Rockafeller</cite>
-                                                                    <div class="testimonial__author-description"> Mother of two.</div>
-                                                                </blockquote>
-                                                            </div>
-                                                        </div>
+                <div class="panel-grid row m-b-lg">
+                    <div class="panel-row-style">
+                        <div class="col-md-12">
+                            <div class="so-panel widget widget-testimonials panel-first-child panel-last-child">
+                                <div class="testimonial grey-wrap">
+                                    <h2 class="widget-title">Testimonials</h2>
+                                    <div class="carousel slide" data-ride="carousel" data-interval="false">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <div class="row">
+                                                    <div class="col-xs-12  col-sm-12">
+                                                        <blockquote>
+                                                            <p class="testimonial__quote"> We've had a lot of financial troubles over the years; loss of physical health, job and bankruptcy. Laura's coaching gave us hope and a new sense of vision so we can create our lives together.</p>
+                                                            <cite class="testimonial__author"> Anastacia Rockafeller</cite>
+                                                            <div class="testimonial__author-description"> Mother of two.</div>
+                                                        </blockquote>
                                                     </div>
                                                 </div>
                                             </div>
@@ -328,124 +305,126 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ========  // END TESTIMONIALS ======== -->
-
-                        <!-- ============================
-                              FAQ SECTION
-                             ============================ -->
-
-                        <!-- FAQ TITLE -->
-                        <div class="panel-grid row m-b">
-                            <div class="col-md-12">
-                                <div class="so-panel widget panel-first-child panel-last-child" id="panel-6-4-0-0">
-                                    <div class="text-center panel-widget-style">
-                                        <h3 class="widget-title">Frequently Asked Questions</h3>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- // end FAQ TITLE -->
-                        <div class="panel-grid row m-b-0">
-                            <div class="col-md-4">
-                                <div class="so-panel widget widget_black_studio_tinymce panel-first-child panel-last-child" id="panel-6-5-0-0">
-                                    <div class="textwidget">
-                                        <p><strong>What can I expect in the first session when I see a therapist?</strong></p>
-                                        <p>Aliquam erat volutpat. Morbi volutpat velit ac sem vulputate sollicitudin. Aliquam tincidunt finibus leo, eget suscipit augue eleifend in.</p>
-                                        <p><a class="read-more" href="faq.html">Read more</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="so-panel widget widget_black_studio_tinymce panel-first-child panel-last-child" id="panel-6-5-1-0">
-                                    <div class="textwidget">
-                                        <p><strong>What are the signs of being abused by partner?</strong></p>
-                                        <p>Morbi volutpat velit ac sem vulputate sollicitudin. Aliquam tincidunt finibus leo, eget suscipit augue eleifend in.&nbsp;Aliquam erat volutpat.</p>
-                                        <p><a class="read-more" href="faq.html">Read more</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="so-panel widget widget_black_studio_tinymce panel-first-child panel-last-child" id="panel-6-5-2-0">
-                                    <div class="textwidget">
-                                        <p><strong>What can I expect in the first session when I see a therapist?</strong></p>
-                                        <p>Aliquam erat volutpat. Morbi volutpat velit ac sem vulputate sollicitudin. Aliquam tincidunt finibus leo, eget suscipit augue eleifend in.</p>
-                                        <p><a class="read-more" href="faq.html">Read more</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ========  // END FAQ SECTION ======== -->
-
-                    </article>
-
+                    </div>
                 </div>
-                <!-- // end .content-container -->
 
-                <!-- ========  // END CONTENT ======== -->
+                <!-- ========  // END TESTIMONIALS ======== -->
 
                 <!-- ============================
-                  LATEST POSTS
-                 ============================ -->
+                        FAQ SECTION
+                        ============================ -->
 
-                <div class="latest-posts">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="latest-post">
-                                <a class="latest-post__thumbnail" href="blog-single.html"><img width="270" height="190" src="{{asset('assets/images/image-36-270x190.jpg') }}" class="attachment-latest-posts size-latest-posts wp-post-image" alt="MentalPress 21"></a>
-                                <div class="latest-post__categories">
-                                    <ul class="post-categories">
-                                        <li><a href="category/teenage/index.html" rel="category tag">Teenage</a></li>
-                                    </ul>
-                                </div>
-                                <h4 class="latest-post__title"><a href="blog-single.html">Looking for help is sign of strength</a></h4>
-                                <p class="latest-post__excerpt"> Individual treatment is often termed as psychotherapy, and is meant to help people with their emotional issues, which can …</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="latest-post">
-                                <a class="latest-post__thumbnail" href="blog-single.html"><img width="270" height="190" src="{{asset('assets/images/image-45-270x190.jpg') }}" class="attachment-latest-posts size-latest-posts wp-post-image" alt="MentalPress 13"></a>
-                                <div class="latest-post__categories">
-                                    <ul class="post-categories">
-                                        <li><a href="category/self-improvement/index.html" rel="category tag">Self-improvement</a></li>
-                                        <li><a href="category/therapy/index.html" rel="category tag">Therapy</a></li>
-                                    </ul>
-                                </div>
-                                <h4 class="latest-post__title"><a href="blog-single.html">Get the most out of your work day</a></h4>
-                                <p class="latest-post__excerpt"> There are many emotional issues that find a corner in our heart, and refuse to die down. With time, these issues can transform …</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="latest-post">
-                                <a class="latest-post__thumbnail" href="blog-single.html"><img width="270" height="190" src="{{asset('assets/images/image-57-270x190.jpg') }}" class="attachment-latest-posts size-latest-posts wp-post-image" alt="MentalPress 1"></a>
-                                <div class="latest-post__categories">
-                                    <ul class="post-categories">
-                                        <li><a href="category/children-therapy/index.html" rel="category tag">Children Therapy</a></li>
-                                    </ul>
-                                </div>
-                                <h4 class="latest-post__title"><a href="blog-single.html">Help your child find new friends</a></h4>
-                                <p class="latest-post__excerpt"> Anxiety is something that exists in everyone’s life to a certain extent, and in a way it is medically known to be helpful …</p>
+                <!-- FAQ TITLE -->
+                <div class="panel-grid row m-b">
+                    <div class="col-md-12">
+                        <div class="so-panel widget panel-first-child panel-last-child" id="panel-6-4-0-0">
+                            <div class="text-center panel-widget-style">
+                                <h3 class="widget-title">Frequently Asked Questions</h3>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- // end FAQ TITLE -->
+                <div class="panel-grid row m-b-0">
+                    <div class="col-md-4">
+                        <div class="so-panel widget widget_black_studio_tinymce panel-first-child panel-last-child" id="panel-6-5-0-0">
+                            <div class="textwidget">
+                                <p><strong>What can I expect in the first session when I see a therapist?</strong></p>
+                                <p>Aliquam erat volutpat. Morbi volutpat velit ac sem vulputate sollicitudin. Aliquam tincidunt finibus leo, eget suscipit augue eleifend in.</p>
+                                <p><a class="read-more" href="faq.html">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="so-panel widget widget_black_studio_tinymce panel-first-child panel-last-child" id="panel-6-5-1-0">
+                            <div class="textwidget">
+                                <p><strong>What are the signs of being abused by partner?</strong></p>
+                                <p>Morbi volutpat velit ac sem vulputate sollicitudin. Aliquam tincidunt finibus leo, eget suscipit augue eleifend in.&nbsp;Aliquam erat volutpat.</p>
+                                <p><a class="read-more" href="faq.html">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="so-panel widget widget_black_studio_tinymce panel-first-child panel-last-child" id="panel-6-5-2-0">
+                            <div class="textwidget">
+                                <p><strong>What can I expect in the first session when I see a therapist?</strong></p>
+                                <p>Aliquam erat volutpat. Morbi volutpat velit ac sem vulputate sollicitudin. Aliquam tincidunt finibus leo, eget suscipit augue eleifend in.</p>
+                                <p><a class="read-more" href="faq.html">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========  // END FAQ SECTION ======== -->
+
+            </article>
+
+        </div>
+        <!-- // end .content-container -->
+
+        <!-- ========  // END CONTENT ======== -->
+
+        <!-- ============================
+            LATEST POSTS
+            ============================ -->
+
+        <div class="latest-posts">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="latest-post">
+                        <a class="latest-post__thumbnail" href="blog-single.html"><img width="270" height="190" src="{{asset('assets/images/image-36-270x190.jpg') }}" class="attachment-latest-posts size-latest-posts wp-post-image" alt="MentalPress 21"></a>
+                        <div class="latest-post__categories">
+                            <ul class="post-categories">
+                                <li><a href="category/teenage/index.html" rel="category tag">Teenage</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="latest-post__title"><a href="blog-single.html">Looking for help is sign of strength</a></h4>
+                        <p class="latest-post__excerpt"> Individual treatment is often termed as psychotherapy, and is meant to help people with their emotional issues, which can …</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="latest-post">
+                        <a class="latest-post__thumbnail" href="blog-single.html"><img width="270" height="190" src="{{asset('assets/images/image-45-270x190.jpg') }}" class="attachment-latest-posts size-latest-posts wp-post-image" alt="MentalPress 13"></a>
+                        <div class="latest-post__categories">
+                            <ul class="post-categories">
+                                <li><a href="category/self-improvement/index.html" rel="category tag">Self-improvement</a></li>
+                                <li><a href="category/therapy/index.html" rel="category tag">Therapy</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="latest-post__title"><a href="blog-single.html">Get the most out of your work day</a></h4>
+                        <p class="latest-post__excerpt"> There are many emotional issues that find a corner in our heart, and refuse to die down. With time, these issues can transform …</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="latest-post">
+                        <a class="latest-post__thumbnail" href="blog-single.html"><img width="270" height="190" src="{{asset('assets/images/image-57-270x190.jpg') }}" class="attachment-latest-posts size-latest-posts wp-post-image" alt="MentalPress 1"></a>
+                        <div class="latest-post__categories">
+                            <ul class="post-categories">
+                                <li><a href="category/children-therapy/index.html" rel="category tag">Children Therapy</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="latest-post__title"><a href="blog-single.html">Help your child find new friends</a></h4>
+                        <p class="latest-post__excerpt"> Anxiety is something that exists in everyone’s life to a certain extent, and in a way it is medically known to be helpful …</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <!-- // end div[role=main] -->
+    <!-- // end div[role=main] -->
 
-            <div class="col-xs-12  col-md-3  col-md-pull-9">
+    <div class="col-xs-12  col-md-3  col-md-pull-9">
 
-                <!-- ============================
-                  SIDEBAR
-                 ============================ -->
+        <!-- ============================
+            SIDEBAR
+            ============================ -->
 
-                <div class="sidebar">
-                    <nav id="main-navigation" class="main-navigation__container">
-                        <div class="main-navigation__title"> NAVIGATION</div>
-                        <ul id="menu-main-menu" class="main-navigation">
-                            <li class="menu-item current-menu-item current_page_item"><a href="index.html">Home</a>
+        <div class="sidebar">
+            <nav id="main-navigation" class="main-navigation__container">
+                <div class="main-navigation__title"> NAVIGATION</div>
+                <ul id="menu-main-menu" class="main-navigation">
+                    <li class="menu-item current-menu-item current_page_item"><a href="index.html">Home</a>
 
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="services.html">Services</a>
@@ -476,6 +455,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                        </ul> <a class="btn  btn-primary  btn-featured-page" target="_self" href="appointment.html"> Make an Appointment </a>
                     </nav>
                     <div class="widget  widget-about-us">
                         <div id="carousel-people-pw_about_us-2" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -486,116 +466,33 @@
                             </div>
                         </div>
                     </div>
-                   
-                  
+                    <div class="widget  widget-skype">
+                        <a class="skype-button" href="skype:echo123"> <i class="fa  fa-skype"></i>
+                            <p class="skype-button__title">Skype Call</p>
+                        </a>
+                    </div>
+                    <div class="widget  widget_text">
+                        <h4 class="sidebar__headings">Forms</h4>
+                        <div class="textwidget">Before our first session, kindly take some time to print &amp; fill out relevant forms as well as you can.
+                            <br>
+                            <br><a class="btn  btn-default  fullwidth" href="{{asset('assets/images/brochure.pdf') }}" target="_self"><i class="fa fa-file-pdf-o"></i> Financial Agreement</a><a class="btn  btn-default  fullwidth" href="{{asset('assets/images/brochure.pdf') }}" target="_self"><i class="fa fa-file-word-o"></i> Release of Information</a></div>
+                    </div>
+                    <div class="widget  widget_text">
+                        <h4 class="sidebar__headings">Verifications</h4>
+                        <div class="textwidget">
+                            <a href="#"><img src="{{asset('assets/images/verification_01.png') }}" class="logo-alternative" alt="Verification"></a>
+                            <a href="#"><img src="{{asset('assets/images/verification_02.png') }}" class="logo-alternative" alt="Verification"></a>
+                            <a href="#"><img src="{{asset('assets/images/verification_03.png') }}" class="logo-alternative" alt="Verification"></a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- ========  // END SIDEBAR ======== -->
+        <!-- ========  // END SIDEBAR ======== -->
 
             </div>
         </div>
         <!-- // end .row -->
     </div>
-    <!-- // end .container -->
+    
 
-    <div class="footer-gradient"></div>
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container  footer-top__divider">
-                <div class="row">
-                    <div class="col-xs-12  col-md-4">
-                        <div class="widget  widget_text">
-                            <h6 class="footer-top__headings">A little something about us</h6>
-                            <div class="textwidget">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p> <a href="about.html" class="read-more">READ MORE</a></div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12  col-md-2">
-                        <div class="widget  widget_nav_menu">
-                            <h6 class="footer-top__headings">Navigation</h6>
-                            <div class="menu-footer-menu-container">
-                                <ul id="menu-footer-menu" class="menu">
-                                    <li class="menu-item"><a href="services.html">Services</a></li>
-                                    <li class="menu-item"><a href="about.html">About Me</a></li>
-                                    <li class="menu-item"><a href="blog.html">Blog</a></li>
-                                    <li class="menu-item"><a href="shop.html">Shop</a></li>
-                                    <li class="menu-item"><a href="appointment.html">Make an Appointment</a></li>
-                                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12  col-md-2">
-                        <div class="widget  widget_nav_menu">
-                            <h6 class="footer-top__headings">Our Services</h6>
-                            <div class="menu-services-container">
-                                <ul id="menu-services" class="menu">
-                                    <li class="menu-item"><a href="depression-treatment.html">Depression</a></li>
-                                    <li class="menu-item"><a href="anxiety-treatment.html">Anxiety</a></li>
-                                    <li class="menu-item">
-                                        <a href="couples-therapy.html">Couples</a>
-                                    </li>
-                                    <li class="menu-item"><a href="services/individual-treatment/index.html">Individual</a></li>
-                                    <li class="menu-item"><a href="post-divorce-recovery.html">Post-divorce</a></li>
-                                    <li class="menu-item"><a href="children-therapy.html">Children</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12  col-md-4">
-                        <div class="widget  widget_text">
-                            <h6 class="footer-top__headings">Buy Now</h6>
-                            <div class="textwidget">
-                                <p>If you come all the way down here, you probably really like our MentalPress theme. To save you all the troubles finding where to buy this theme, we have a solution for that too. Just click the button below.</p>
-                                <br> <a class="btn  btn-primary" href="http://themeforest.net/item/x/XXXXXX?ref=surjithctly" target="_blank">BUY NOW</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom__left"> <img src="{{asset('assets/images/logo_bw.png') }}" alt="Logo Footer"></div>
-                <div class="footer-bottom__right">
-                    <div class="footer-bottom__payment-methods"> <span>PAYMENT METHODS:</span> &nbsp; &nbsp; &nbsp; <i class="fa  fa-3x  fa-cc-visa"></i> &nbsp; <i class="fa  fa-3x  fa-cc-mastercard"></i> &nbsp; <i class="fa  fa-3x  fa-cc-amex"></i> &nbsp; <i class="fa  fa-3x  fa-cc-paypal"></i></div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- 
-     Choose Color Theme : Only for Demo
-     ====================================== -->
-    <div class="color-picker">
-        <a href="javascript:void(0);" onclick="setActiveStyleSheet('purple'); return false;" class="color_purple"></a>
-        <a href="javascript:void(0);" onclick="setActiveStyleSheet('blue'); return false;" class="color_blue"></a>
-        <a href="javascript:void(0);" onclick="setActiveStyleSheet('orange'); return false;" class="color_orange"></a>
-        <a href="javascript:void(0);" onclick="setActiveStyleSheet('green'); return false;" class="color_green"></a>
-        <a href="javascript:void(0);" onclick="setActiveStyleSheet('red'); return false;" class="color_red"></a>
-        <a href="javascript:void(0);" onclick="setActiveStyleSheet('light-blue'); return false;" class="color_light_blue"></a>
-    </div>
-    <!-- End // .color-theme-picker -->
-
-    <!-- ========== Javascripts ========= -->
-
-    <!-- Jquery -->
-    <script type="text/javascript" src="{{asset('assets/js/jquery.min.js') }}"></script>
-
-    <!-- Bootstrap JS -->
-    <script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js') }}"></script>
-
-    <!-- Picture Fill -->
-    <script type="text/javascript" src="{{asset('assets/js/picturefill.min.js') }}"></script>
-
-    <!-- Style Switcher -->
-    <script src="{{asset('assets/js/style-switcher.js') }}"></script>
-
-    <!-- Main JS -->
-    <script type="text/javascript" src="{{asset('assets/js/main.js') }}"></script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8d828cc5b8ed4c71","version":"2024.10.3","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"1a2187940c214caa9d3fed19b4904902","b":1}' crossorigin="anonymous"></script>
-</body>
-
-
-<!-- Mirrored from demo.web3canvas.com/themeforest/mentalpress/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2024 13:28:55 GMT -->
-</html>
+    @endsection

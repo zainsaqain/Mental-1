@@ -15,7 +15,6 @@
                     <span class="font-size-13 text-white-50">Administrator</span>
                 </div>
             </div>
-        </div>
 
 
 
